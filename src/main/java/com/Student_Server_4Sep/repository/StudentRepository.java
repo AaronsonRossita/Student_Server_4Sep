@@ -10,12 +10,11 @@ public interface StudentRepository {
     void updateExistingStudent(Student student);
     void deleteExistingStudentById(int id);
 
+    Student getStudentById(int id);
     List<Student> getAllStudents();
-    List<Student> getAllStudentsByFirstName(String firstName);
-    List<String> getAllEmailsByFirstName(String firstName);
-    List<Student> getAllStudentsByIdList(List<Integer> idList);
-
-
+    List<Student> getStudentsByFirstName(String firstName);
+    List<String> getStudentEmailsByFirstName(String firstName);
+    List<Student> getStudentsByListOfIds(List<Integer> ids);
 
 
 }
